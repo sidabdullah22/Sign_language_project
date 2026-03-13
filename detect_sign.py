@@ -13,11 +13,11 @@ class SignLanguageApp(ctk.CTk):
         self.is_translating = False
         self.holistic = mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5)
         
-        # UI Elements
+        # UI
         self.video_label = ctk.CTkLabel(self, text="", width=640, height=480, fg_color="black")
         self.video_label.pack(pady=20)
         
-        # Add your Start/Pause/Complete buttons here as we discussed...
+        # Add your Start/Pause/Complete 
 
 if __name__ == "__main__":
     app = SignLanguageApp()

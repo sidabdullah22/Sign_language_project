@@ -30,7 +30,6 @@ def draw_landmarks(image, results):
             mp_drawing.draw_landmarks(image, hand_landmarks, mp_hands.HAND_CONNECTIONS)
 
 def extract_landmarks(results):
-    # Extracts only the first hand detected (Standard for ASL Alphabets)
     if results.multi_hand_landmarks:
         for hand_landmarks in results.multi_hand_landmarks:
             return np.array([[res.x, res.y, res.z] for res in hand_landmarks.landmark]).flatten()

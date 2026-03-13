@@ -20,7 +20,7 @@ with mp_hands.Hands(static_image_mode=True, max_num_hands=1, min_detection_confi
 
         print(f"Processing class: {action}...")
         
-        # Get list of images and limit to 500 for speed (remove [:500] to do all)
+        # Get list of images and limit to 500 per class for manageability
         img_list = os.listdir(action_path)[:500] 
         
         for img_name in img_list:
