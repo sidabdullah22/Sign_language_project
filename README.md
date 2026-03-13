@@ -1,7 +1,3 @@
-Here is a professional and structured **README.md** for your project. You can copy this into a file named `README.md` in your project root folder.
-
----
-
 # AI Sign Language Alphabet Translator
 
 A real-time American Sign Language (ASL) alphabet translator built with **Python**, **MediaPipe**, and **TensorFlow**. This project uses computer vision to detect hand landmarks and a Deep Neural Network (DNN) to classify them into letters.
